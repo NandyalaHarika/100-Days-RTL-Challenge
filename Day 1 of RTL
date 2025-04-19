@@ -1,0 +1,13 @@
+module basic_gates(
+    input wire a, wire b,
+    output wire y_and,wire y_or,wire y_not_a,wire y_nand,wire y_nor,wire y_xor,wire y_xnor
+    );
+// Gate-level modeling using built-in Verilog gates
+and (y_and,a,b);   //AND gate 
+or (y_or,a,b);    //OR gate 
+not (y_not_a,a);  //NOT gate(only one input consideration)
+nand (y_nand,a,b);   //NAND gate
+nor  (y_nor,a,b);    // NOR gate
+xor (y_xor,a,b);   //XOR gate
+xnor (y_xnor,a,b);   //XNOR gate
+endmodule
